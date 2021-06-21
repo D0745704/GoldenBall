@@ -12,6 +12,7 @@
 		472AE01A26805719009CC741 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 472AE01926805719009CC741 /* Experience.rcproject */; };
 		472AE01C2680571B009CC741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472AE01B2680571B009CC741 /* Assets.xcassets */; };
 		472AE01F2680571B009CC741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472AE01E2680571B009CC741 /* Preview Assets.xcassets */; };
+		F52C2A0F26808153000E8213 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C2A0E26808153000E8213 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		472AE01B2680571B009CC741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472AE01E2680571B009CC741 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		472AE0202680571B009CC741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52C2A0E26808153000E8213 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		472AE01426805719009CC741 /* GoldenBall */ = {
 			isa = PBXGroup;
 			children = (
+				F52C2A0E26808153000E8213 /* SecondView.swift */,
 				472AE01526805719009CC741 /* AppDelegate.swift */,
 				472AE01726805719009CC741 /* ContentView.swift */,
 				472AE01926805719009CC741 /* Experience.rcproject */,
@@ -143,6 +146,7 @@
 			files = (
 				472AE01826805719009CC741 /* ContentView.swift in Sources */,
 				472AE01626805719009CC741 /* AppDelegate.swift in Sources */,
+				F52C2A0F26808153000E8213 /* SecondView.swift in Sources */,
 				472AE01A26805719009CC741 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
