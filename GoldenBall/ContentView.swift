@@ -16,8 +16,8 @@ struct ContentView : View {
         TabView(selection: $selectedTabview){
 
             Tabview1(selectedTabview: $selectedTabview).tabItem{
-                Image(systemName: "c.circle")
-                Text("GB")
+                Image(systemName: "circle.fill")
+                Text("GoldenBall")
             }.tag(1)
             Tabview2().tabItem{
                 Image(systemName: "person.circle")
