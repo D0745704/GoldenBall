@@ -9,11 +9,51 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    @State var selectedTabview = 0
+    @State var viewControl = false
+    
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        TabView(selection: $selectedTabview){
+
+            Tabview1(selectedTabview: $selectedTabview).tabItem{
+                Image(systemName: "c.circle")
+                Text("GB")
+            }.tag(1)
+            Tabview2().tabItem{
+                Image(systemName: "person.circle")
+                Text("My_Info")
+            }.tag(0)
+        }
     }
 }
-
+//return ARViewContainer().edgesIgnoringSafeArea(.all)
+struct Tabview1: View{
+    @Binding var selectedTabview: Int
+    var body: some View{
+        VStack{
+            return ARViewContainer().edgesIgnoringSafeArea(.all)
+        }
+    }
+}
+struct Tabview2: View{
+    @State var username: String = ""
+    private var enableButton: Bool {
+            !username.isEmpty
+    }
+    var body: some View{
+        VStack{
+            HStack{
+                Text("Username")
+                TextField("Username",text: $username)
+                .frame(width: 245.0)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            Button("Sign Up"){
+                print("Sign in using \(self.username)")
+            }.disabled(!enableButton)
+        }
+    }
+}
 struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
