@@ -50,9 +50,9 @@ struct Tabview2: View{
                 .frame(width: 245.0)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             }
-            Button(action:{
+            Button(action:
                 self.isPresented = true
-            }){
+            ){
                 Text("Sign Up").foregroundColor(.blue)
                 print("Sign in using \(self.username)")
             }.disabled(!enableButton)
