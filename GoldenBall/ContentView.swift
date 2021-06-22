@@ -37,7 +37,7 @@ struct Tabview1: View{
 }
 struct Tabview2: View{
     @State var username: String = ""
-    @State var isPresented:Bool = false
+    @State var isPresented: Bool = false
     private var enableButton: Bool {
             !username.isEmpty
     }
@@ -50,17 +50,18 @@ struct Tabview2: View{
                 .frame(width: 245.0)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             }
-            Button(action:
-                self.isPresented = true
-            ){
-                Text("Sign Up").foregroundColor(.blue)
-                print("Sign in using \(self.username)")
-            }.disabled(!enableButton)
+            Button(action: {
+                    self.isPresented = true
+                    print("Sign in using \(self.username)")
+            }){
+                Text("Login").foregroundColor(.blue)
+            }
+            .disabled(!enableButton)
             .sheet(isPresented: $isPresented){
                 SecondView()
-            }
-        }.padding()
-        .font(.title)
+            }.padding()
+            .font(.title)
+        }
     }
 }
 struct ARViewContainer: UIViewRepresentable {
